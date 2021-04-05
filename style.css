@@ -8,10 +8,9 @@ h1{
 
 img{
 
-   height:90%;
-   width:90%;
-   border: #88a4ab double 10px;
-   box-shadow: -7px 7px 7px #464646 ;
+   max-height:90%;
+   max-width:90%;
+   border: gray outset 10px;
 }
 
 body{
@@ -82,7 +81,6 @@ header{
 
 aside{
     grid-area:aside;
-    background-color:white;
 
 }
 
