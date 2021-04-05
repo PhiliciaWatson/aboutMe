@@ -8,8 +8,8 @@ h1{
 
 img{
 
-   width:200px;
-   height:200px;
+   height:90%;
+   width:90%;
    border: #88a4ab double 10px;
    box-shadow: -7px 7px 7px #464646 ;
 }
