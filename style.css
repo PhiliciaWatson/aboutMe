@@ -1,0 +1,110 @@
+h1{
+
+    font-family:  'Chango', cursive;
+    color:#344e5a;
+    font-size:40px;
+    text-decoration:underline overline;
+}
+
+img{
+
+   width:200px;
+   height:200px;
+   border: #88a4ab double 10px;
+   box-shadow: -7px 7px 7px #464646 ;
+}
+
+body{
+    text-align:center;
+    background-position: center;
+    background-size: cover;
+    background-color:#bba686 ;
+    animation: colorchanging 10s infinite;
+}
+
+@media screen and (max-width:760px){
+
+    body{
+        font-size:10px;
+    }
+
+    #content{
+        /* margin:0 auto;
+        padding:0px; */
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-auto-rows:minmax(100px,auto);
+        max-width:760px;
+        grid-gap:12px;
+        flex-direction:column;
+        grid-template-areas:
+        "header header header header"
+        "aside aside intro intro"
+        "Resume Resume title title"
+        "main main main main"
+        "strengths strengths strengths strengths";    
+    }
+}
+
+@keyframes colorchanging{
+    0%   {background:#4bc0c8; color: #6dd5fa;}
+    50%  {background: #fbd789; color: #c6ffdd;}
+    75%  {background: #f7797d; color: #dc2430;}
+    100% {background:#4bc0c8; color: #f64f59;}
+}
+    /* background-image:radial-gradient(#fff474,#f06553,navy); */
+p{
+
+    font-family:'Rock Salt', cursive;
+    font-size:1em;
+    color:black;
+}
+
+#content{
+    display:grid;
+    grid-gap:14px;
+    grid-template-areas:
+    "header header header header"
+    "aside aside intro intro"
+    "Resume Resume title title"
+    "main main main main"
+    "strengths strengths strengths strengths";
+    padding:12px;
+    margin:0px;
+
+}
+
+header{
+    grid-area:header;
+    background-color:white;
+
+}
+
+aside{
+    grid-area:aside;
+    background-color:white;
+
+}
+
+#intro{
+    grid-area:intro;
+    background-color: white;
+}
+#title{
+    grid-area:title;
+    background-color:white;
+}
+
+#Resume{
+    grid-area:Resume;
+    background-color:white;
+}
+main{
+    grid-area:main;
+    background-color:white;
+
+}
+#strengths{
+    grid-area:strengths;
+    background-color:white;
+}
